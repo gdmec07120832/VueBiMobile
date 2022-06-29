@@ -1,0 +1,118 @@
+for n in 2 5 10 15 20
+  {'.py' + n}
+    padding-top n * 1px
+    padding-bottom n * 1px
+  {'.px' + n}
+    padding-left n * 1px
+    padding-right n * 1px
+  {'.pt' + n}
+    margin-bottom n * 1px
+  {'.pb' + n}
+    margin-bottom n * 1px
+  {'.pl' + n}
+    padding-left n * 1px
+  {'.pr' + n}
+    padding-right n * 1px
+  {'.mx' + n}
+    margin-left n * 1px
+    margin-right n* 1px
+  {'.my' + n}
+    margin-top n * 1px
+    margin-bottom n * 1px
+  {'.mt' + n}
+    margin-bottom n * 1px
+  {'.mb' + n}
+    margin-bottom n * 1px
+  {'.ml' + n}
+    margin-left n * 1px
+  {'.mr' + n}
+    margin-right n * 1px
+
+for n in 12 14 16 18 20 24 28 32 40
+  {'.font' + n}
+    font-size n * 1px
+
+
+.text-danger {
+  color #ff4d4f!important
+}
+
+.text-warning {
+  color #faad14!important
+}
+
+.bg-danger {
+  background-color #ff4d4f
+}
+
+
+.text-ellipsis {
+  white-space nowrap
+  overflow hidden
+  text-overflow ellipsis
+}
+
+.flex {
+  display flex
+  align-items center
+}
+
+.flex-between {
+  @extend .flex
+  justify-content space-between
+}
+
+.flex-around {
+  @extend .flex
+  justify-content space-around
+}
+
+.flex-center {
+  @extend .flex
+  justify-content center
+}
+
+.flex-start {
+  @extend .flex
+  justify-content flex-start
+}
+
+.flex-end {
+  @extend .flex
+  justify-content flex-end
+}
+
+*, *:before, *:after {
+  box-sizing border-box
+}
+
+body, html {
+  margin 0
+  padding 0
+  height 100%
+  font-family: 'PingFang SC', Helvetica, Arial, sans-serif, 'Droid Sans';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #d1d1d1;
+  transition: background-color .3s ease-in-out;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d1d1d1;
+  height: 50px;
+  outline-offset: -1px;
+  outline: 1px solid #fff;
+  border-radius: 5px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  transition: background-color .3s ease-in-out;
+}
